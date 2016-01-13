@@ -18,3 +18,115 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	padding: 2em;
+}
+
+.main {
+	background-color: #ddd;
+	width: 90%;
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 0.75em;em;
+	overflow: hidden;
+}
+
+.left, .right {
+	overflow: visible;
+	position: relative;
+}
+
+.left {
+	top: -60rem;
+	animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+}
+
+.right {
+	top: 0;
+	animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+}
+
+.list-up, .list-down {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 15rem;}
+
+.list-up li,
+.list-down li {
+	height: 15rem;
+}
+
+.list-down i {
+	font-size: 12em;
+}
+
+.list-up {
+	font-size: 2em;
+}
+
+.list-up li {
+	position: relative;
+	top: 5rem;
+}
+
+@keyframes up {
+	0% {
+		top: 0;
+	}
+	5% {
+		top: -15em;
+	}
+	25% {
+		top: -15em;
+	}
+	30% {
+		top: -30em;
+	}
+	50% {
+		top: -30em;
+	}
+	55% {
+		top: -45em;
+	}
+	75% {
+		top: -45em;
+	}
+	80% {
+		top: -60em;
+	}
+	100% {
+		top: -60em;
+	}
+}
+
+@keyframes down {
+	0% {
+		top: -60em;
+	}
+	5% {
+		top: -45em;
+	}
+	25% {
+		top: -45em;
+	}
+	30% {
+		top: -30em;
+	}
+	50% {
+		top: -30em;
+	}
+	55% {
+		top: -15em;
+	}
+	75% {
+		top: -15em;
+	}
+	80% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
