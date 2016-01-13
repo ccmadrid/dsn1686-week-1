@@ -161,7 +161,7 @@ body {
 }
 
 .list-up {
-	font-size: 2em;
+	font-size: 1.75em;
 }
 
 .list-up li {
@@ -170,6 +170,11 @@ body {
 }
 
 @media only screen and (min-width: 38em) {
-.right {
-	margin-top: 15em;
+	.right {
+		margin-top: 15em;
+	}
+
+	.list-up {
+		font-size: 2em;
+	}
 }
