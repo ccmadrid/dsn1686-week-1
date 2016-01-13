@@ -178,16 +178,16 @@ keyframes up {
 
 .left {
 	top: -75em;
-	-webkit-animation: down 5s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
-	        animation: down 5s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	-webkit-animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	        animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
 		color: rgba(255,255,255,0.25);
 		transition: color 250ms ease-in-out;
 }
 
 .right {
 	top: -15em;
-	-webkit-animation: up 5s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
-	        animation: up 5s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	-webkit-animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	        animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
 	color: #ed0;
 }
 
