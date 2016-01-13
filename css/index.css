@@ -18,24 +18,3 @@ html {
 	box-sizing: inherit;
 }
 
-.btn {
-	background-color: #ccc;
-	color: #000;
-	font-weight: bold;
-	text-decoration: none;
-	padding: 0.5em 1em;
-	border-radius: 5px;
-	display: inline-block;
-	margin: 0.5em;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active {
-	background-color: #aaa;
-}
-
-.btn i {
-	vertical-align: middle;
-	padding-right: 0.5em;
-}
