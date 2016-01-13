@@ -1,13 +1,10 @@
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
 html {
 	box-sizing: border-box;
-
-	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
@@ -36,39 +33,34 @@ body {
 	position: relative;
 }
 
-.left {
-	top: -60rem;
-	animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
-}
-
-.right {
-	top: 0;
-	animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
-}
-
-.list-up, .list-down {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: block;
-	height: 15rem;}
-
-.list-up li,
-.list-down li {
-	height: 15rem;
-}
-
-.list-down i {
-	font-size: 12em;
-}
-
-.list-up {
-	font-size: 2em;
-}
-
-.list-up li {
-	position: relative;
-	top: 5rem;
+@-webkit-keyframes up {
+	0% {
+		top: 0;
+	}
+	5% {
+		top: -15em;
+	}
+	25% {
+		top: -15em;
+	}
+	30% {
+		top: -30em;
+	}
+	50% {
+		top: -30em;
+	}
+	55% {
+		top: -45em;
+	}
+	75% {
+		top: -45em;
+	}
+	80% {
+		top: -60em;
+	}
+	100% {
+		top: -60em;
+	}
 }
 
 @keyframes up {
@@ -101,6 +93,36 @@ body {
 	}
 }
 
+@-webkit-keyframes down {
+	0% {
+		top: -60em;
+	}
+	5% {
+		top: -45em;
+	}
+	25% {
+		top: -45em;
+	}
+	30% {
+		top: -30em;
+	}
+	50% {
+		top: -30em;
+	}
+	55% {
+		top: -15em;
+	}
+	75% {
+		top: -15em;
+	}
+	80% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
+
 @keyframes down {
 	0% {
 		top: -60em;
@@ -130,3 +152,42 @@ body {
 		top: 0;
 	}
 }
+
+.left {
+	top: -60rem;
+	-webkit-animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	        animation: down 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+}
+
+.right {
+	top: 0;
+	-webkit-animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+	        animation: up 10s cubic-bezier(0.475, -0.185, 0.475, 1.185) infinite;
+}
+
+.list-up, .list-down {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 15rem;}
+
+.list-up li,
+.list-down li {
+	height: 15rem;
+}
+
+.list-down i {
+	font-size: 12em;
+}
+
+.list-up {
+	font-size: 2em;
+}
+
+.list-up li {
+	position: relative;
+	top: 5rem;
+}
+
+
